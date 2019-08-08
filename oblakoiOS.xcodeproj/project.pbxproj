@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07252AB7A91A3C41E9F40CFC /* Pods_oblakoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1006DBAB9F11CEF8D2D0053D /* Pods_oblakoiOS.framework */; };
+		BE2DDCCA21FC8E9E00D8F59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCC921FC8E9D00D8F59E /* AppDelegate.swift */; };
+		BE2DDCD121FC8E9E00D8F59E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCCF21FC8E9E00D8F59E /* Main.storyboard */; };
+		BE2DDCD321FC8EB100D8F59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCD221FC8EB100D8F59E /* Assets.xcassets */; };
+		BE2DDCD621FC8EB100D8F59E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCD421FC8EB100D8F59E /* LaunchScreen.storyboard */; };
+		BE2DDCDE21FC9AC300D8F59E /* TodosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCDD21FC9AC300D8F59E /* TodosController.swift */; };
+		BE2DDCE021FC9B5600D8F59E /* CustomTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCDF21FC9B5600D8F59E /* CustomTableview.swift */; };
+		BE2DDCE321FC9D0200D8F59E /* CustomCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCE221FC9D0200D8F59E /* CustomCheckboxCell.xib */; };
+		BE2DDCE521FC9D2D00D8F59E /* CustomCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCE421FC9D2D00D8F59E /* CustomCheckboxCell.swift */; };
+		BE2DDCE721FC9FFF00D8F59E /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCE621FC9FFF00D8F59E /* Project.swift */; };
+		BE2DDCE921FCA01900D8F59E /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCE821FCA01900D8F59E /* Todo.swift */; };
+		BE2DDCEB21FCA06E00D8F59E /* AddTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDCEA21FCA06E00D8F59E /* AddTodoController.swift */; };
+		BE2DDCF521FCA47700D8F59E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCF121FCA47600D8F59E /* OpenSans-Regular.ttf */; };
+		BE2DDCF621FCA47700D8F59E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCF221FCA47600D8F59E /* OpenSans-Light.ttf */; };
+		BE2DDCF721FCA47700D8F59E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCF321FCA47600D8F59E /* OpenSans-Semibold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1006DBAB9F11CEF8D2D0053D /* Pods_oblakoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oblakoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F078604C5EB692ABF4451A7 /* Pods-oblakoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oblakoiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-oblakoiOS/Pods-oblakoiOS.release.xcconfig"; sourceTree = "<group>"; };
+		BE2DDCC621FC8E9D00D8F59E /* oblakoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oblakoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2DDCC921FC8E9D00D8F59E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE2DDCD021FC8E9E00D8F59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE2DDCD221FC8EB100D8F59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE2DDCD521FC8EB100D8F59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2DDCD721FC8EB100D8F59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2DDCDD21FC9AC300D8F59E /* TodosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosController.swift; sourceTree = "<group>"; };
+		BE2DDCDF21FC9B5600D8F59E /* CustomTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableview.swift; sourceTree = "<group>"; };
+		BE2DDCE221FC9D0200D8F59E /* CustomCheckboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCheckboxCell.xib; sourceTree = "<group>"; };
+		BE2DDCE421FC9D2D00D8F59E /* CustomCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckboxCell.swift; sourceTree = "<group>"; };
+		BE2DDCE621FC9FFF00D8F59E /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		BE2DDCE821FCA01900D8F59E /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		BE2DDCEA21FCA06E00D8F59E /* AddTodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoController.swift; sourceTree = "<group>"; };
+		BE2DDCF121FCA47600D8F59E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		BE2DDCF221FCA47600D8F59E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		BE2DDCF321FCA47600D8F59E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		EF733714ED65A5DA92BF0CFE /* Pods-oblakoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oblakoiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oblakoiOS/Pods-oblakoiOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2DDCC321FC8E9D00D8F59E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07252AB7A91A3C41E9F40CFC /* Pods_oblakoiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2872892F3E6226415898CC5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1006DBAB9F11CEF8D2D0053D /* Pods_oblakoiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6625AB8B7EAA02ED2BA9C103 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF733714ED65A5DA92BF0CFE /* Pods-oblakoiOS.debug.xcconfig */,
+				6F078604C5EB692ABF4451A7 /* Pods-oblakoiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE2DDCBD21FC8E9D00D8F59E = {
+			isa = PBXGroup;
+			children = (
+				BE2DDCC821FC8E9D00D8F59E /* oblakoiOS */,
+				BE2DDCC721FC8E9D00D8F59E /* Products */,
+				6625AB8B7EAA02ED2BA9C103 /* Pods */,
+				2872892F3E6226415898CC5E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2DDCC721FC8E9D00D8F59E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2DDCC621FC8E9D00D8F59E /* oblakoiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2DDCC821FC8E9D00D8F59E /* oblakoiOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE2DDCEC21FCA3FA00D8F59E /* fonts */,
+				BE2DDCE121FC9B9000D8F59E /* Cells */,
+				BE2DDCC921FC8E9D00D8F59E /* AppDelegate.swift */,
+				BE2DDCCF21FC8E9E00D8F59E /* Main.storyboard */,
+				BE2DDCD221FC8EB100D8F59E /* Assets.xcassets */,
+				BE2DDCD421FC8EB100D8F59E /* LaunchScreen.storyboard */,
+				BE2DDCD721FC8EB100D8F59E /* Info.plist */,
+				BE2DDCDD21FC9AC300D8F59E /* TodosController.swift */,
+				BE2DDCDF21FC9B5600D8F59E /* CustomTableview.swift */,
+				BE2DDCE621FC9FFF00D8F59E /* Project.swift */,
+				BE2DDCE821FCA01900D8F59E /* Todo.swift */,
+				BE2DDCEA21FCA06E00D8F59E /* AddTodoController.swift */,
+			);
+			path = oblakoiOS;
+			sourceTree = "<group>";
+		};
+		BE2DDCE121FC9B9000D8F59E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE2DDCE221FC9D0200D8F59E /* CustomCheckboxCell.xib */,
+				BE2DDCE421FC9D2D00D8F59E /* CustomCheckboxCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BE2DDCEC21FCA3FA00D8F59E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BE2DDCF221FCA47600D8F59E /* OpenSans-Light.ttf */,
+				BE2DDCF121FCA47600D8F59E /* OpenSans-Regular.ttf */,
+				BE2DDCF321FCA47600D8F59E /* OpenSans-Semibold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2DDCC521FC8E9D00D8F59E /* oblakoiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2DDCDA21FC8EB100D8F59E /* Build configuration list for PBXNativeTarget "oblakoiOS" */;
+			buildPhases = (
+				CBEC6B9F495B85C26E62F0F9 /* [CP] Check Pods Manifest.lock */,
+				BE2DDCC221FC8E9D00D8F59E /* Sources */,
+				BE2DDCC321FC8E9D00D8F59E /* Frameworks */,
+				BE2DDCC421FC8E9D00D8F59E /* Resources */,
+				8B7A0023D5FEE663CD140ECD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oblakoiOS;
+			productName = oblakoiOS;
+			productReference = BE2DDCC621FC8E9D00D8F59E /* oblakoiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE2DDCBE21FC8E9D00D8F59E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = skarus;
+				TargetAttributes = {
+					BE2DDCC521FC8E9D00D8F59E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BE2DDCC121FC8E9D00D8F59E /* Build configuration list for PBXProject "oblakoiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE2DDCBD21FC8E9D00D8F59E;
+			productRefGroup = BE2DDCC721FC8E9D00D8F59E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE2DDCC521FC8E9D00D8F59E /* oblakoiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2DDCC421FC8E9D00D8F59E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2DDCF621FCA47700D8F59E /* OpenSans-Light.ttf in Resources */,
+				BE2DDCF521FCA47700D8F59E /* OpenSans-Regular.ttf in Resources */,
+				BE2DDCD621FC8EB100D8F59E /* LaunchScreen.storyboard in Resources */,
+				BE2DDCE321FC9D0200D8F59E /* CustomCheckboxCell.xib in Resources */,
+				BE2DDCD321FC8EB100D8F59E /* Assets.xcassets in Resources */,
+				BE2DDCF721FCA47700D8F59E /* OpenSans-Semibold.ttf in Resources */,
+				BE2DDCD121FC8E9E00D8F59E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B7A0023D5FEE663CD140ECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oblakoiOS/Pods-oblakoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oblakoiOS/Pods-oblakoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oblakoiOS/Pods-oblakoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEC6B9F495B85C26E62F0F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oblakoiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2DDCC221FC8E9D00D8F59E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2DDCE521FC9D2D00D8F59E /* CustomCheckboxCell.swift in Sources */,
+				BE2DDCEB21FCA06E00D8F59E /* AddTodoController.swift in Sources */,
+				BE2DDCDE21FC9AC300D8F59E /* TodosController.swift in Sources */,
+				BE2DDCE921FCA01900D8F59E /* Todo.swift in Sources */,
+				BE2DDCE021FC9B5600D8F59E /* CustomTableview.swift in Sources */,
+				BE2DDCCA21FC8E9E00D8F59E /* AppDelegate.swift in Sources */,
+				BE2DDCE721FC9FFF00D8F59E /* Project.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE2DDCCF21FC8E9E00D8F59E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2DDCD021FC8E9E00D8F59E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE2DDCD421FC8EB100D8F59E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2DDCD521FC8EB100D8F59E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE2DDCD821FC8EB100D8F59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE2DDCD921FC8EB100D8F59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE2DDCDB21FC8EB100D8F59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF733714ED65A5DA92BF0CFE /* Pods-oblakoiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = oblakoiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s.oblakoiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BE2DDCDC21FC8EB100D8F59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F078604C5EB692ABF4451A7 /* Pods-oblakoiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = oblakoiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s.oblakoiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2DDCC121FC8E9D00D8F59E /* Build configuration list for PBXProject "oblakoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2DDCD821FC8EB100D8F59E /* Debug */,
+				BE2DDCD921FC8EB100D8F59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2DDCDA21FC8EB100D8F59E /* Build configuration list for PBXNativeTarget "oblakoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2DDCDB21FC8EB100D8F59E /* Debug */,
+				BE2DDCDC21FC8EB100D8F59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE2DDCBE21FC8E9D00D8F59E /* Project object */;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCheckboxCell" rowHeight="55" id="zAP-tO-7dJ" customClass="CustomCheckboxCell" customModule="oblakoed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zAP-tO-7dJ" id="H00-iQ-Tk2">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU8-Qe-CwW" customClass="M13Checkbox" customModule="M13Checkbox">
+                        <rect key="frame" x="25" y="15" width="13" height="13.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.2274509804" green="0.68627450980000004" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZU8-Qe-CwW" secondAttribute="height" multiplier="1:1" id="I2v-Cy-pAA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="_IBStateChangeAnimation" value="I"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xz-EK-DU8">
+                        <rect key="frame" x="63" y="11.5" width="296" height="21.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-De-ruz" userLabel="Stub">
+                        <rect key="frame" x="0.0" y="0.0" width="63" height="43.5"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZU8-Qe-CwW" firstAttribute="leading" secondItem="H00-iQ-Tk2" secondAttribute="leading" constant="25" id="04K-fH-5WC"/>
+                    <constraint firstAttribute="bottom" secondItem="yDT-De-ruz" secondAttribute="bottom" id="Cm2-MO-BfS"/>
+                    <constraint firstItem="ZU8-Qe-CwW" firstAttribute="centerY" secondItem="H00-iQ-Tk2" secondAttribute="centerY" id="D1b-WU-Kla"/>
+                    <constraint firstItem="6xz-EK-DU8" firstAttribute="leading" secondItem="ZU8-Qe-CwW" secondAttribute="trailing" constant="25" id="N9z-Tl-BHK"/>
+                    <constraint firstItem="yDT-De-ruz" firstAttribute="top" secondItem="H00-iQ-Tk2" secondAttribute="top" id="NeA-Kl-UXl"/>
+                    <constraint firstItem="yDT-De-ruz" firstAttribute="leading" secondItem="H00-iQ-Tk2" secondAttribute="leading" id="Ztr-62-ftE"/>
+                    <constraint firstItem="6xz-EK-DU8" firstAttribute="leading" secondItem="yDT-De-ruz" secondAttribute="trailing" id="hVU-hC-ZtB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6xz-EK-DU8" secondAttribute="trailing" id="i0f-Zb-C5r"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6xz-EK-DU8" secondAttribute="bottom" id="j7D-U4-Tjo"/>
+                    <constraint firstItem="6xz-EK-DU8" firstAttribute="top" secondItem="H00-iQ-Tk2" secondAttribute="topMargin" id="qT8-Wk-mT7"/>
+                    <constraint firstItem="ZU8-Qe-CwW" firstAttribute="top" secondItem="H00-iQ-Tk2" secondAttribute="top" constant="15" id="so4-Gh-VxC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="todoCheckbox" destination="ZU8-Qe-CwW" id="Yu9-9l-Xnr"/>
+                <outlet property="todoTitle" destination="6xz-EK-DU8" id="jAL-NK-x4R"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="-36"/>
+        </tableViewCell>
+    </objects>
+</document>

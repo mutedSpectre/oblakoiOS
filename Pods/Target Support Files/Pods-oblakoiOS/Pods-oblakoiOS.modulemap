@@ -1,0 +1,6 @@
+framework module Pods_oblakoiOS {
+  umbrella header "Pods-oblakoiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
