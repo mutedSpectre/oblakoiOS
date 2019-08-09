@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Задачи-->
         <scene sceneID="BGg-nz-Zzl">
             <objects>
-                <tableViewController id="LD2-Ra-r0R" userLabel="Задачи" customClass="TodosController" customModule="OblakoIOStask" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="LD2-Ra-r0R" userLabel="Задачи" customClass="TodosController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kGO-5M-1e9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,31 +45,32 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addTodoButton" destination="Xpn-Ab-MpP" id="gne-ln-qZL"/>
+                        <outlet property="todoTableView" destination="kGO-5M-1e9" id="2dz-6Q-S9B"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSq-oG-uN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="985" y="-508"/>
         </scene>
-        <!--Новая Задачи-->
+        <!--Новая Задача-->
         <scene sceneID="HKy-x6-Srg">
             <objects>
-                <tableViewController id="iaO-ua-4Ko" customClass="AddTodoController" customModule="OblakoIOStask" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="iaO-ua-4Ko" customClass="AddTodoController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5L7-og-KWS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TodoTitle" id="U7Q-fJ-uNY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TodoTitle" id="U7Q-fJ-uNY" customClass="AddTodoControllerCell" customModule="TodoApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U7Q-fJ-uNY" id="KiO-VM-VXH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Название задачи..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbd-ij-V7O">
-                                            <rect key="frame" x="15" y="10" width="345" height="23.5"/>
+                                        <textField opaque="NO" tag="101" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Название задачи..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbd-ij-V7O" customClass="TextField" customModule="TodoApp" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="39"/>
                                             <edgeInsets key="layoutMargins" top="15" left="25" bottom="15" right="25"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -76,12 +78,16 @@
                                         </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Cbd-ij-V7O" firstAttribute="top" secondItem="KiO-VM-VXH" secondAttribute="top" constant="10" id="BJV-qd-dlE"/>
+                                        <constraint firstItem="Cbd-ij-V7O" firstAttribute="top" secondItem="KiO-VM-VXH" secondAttribute="top" constant="5" id="BJV-qd-dlE"/>
                                         <constraint firstItem="Cbd-ij-V7O" firstAttribute="leading" secondItem="KiO-VM-VXH" secondAttribute="leading" constant="15" id="Rwm-tK-GYC"/>
                                         <constraint firstAttribute="trailing" secondItem="Cbd-ij-V7O" secondAttribute="trailing" constant="15" id="fUJ-QW-AKt"/>
-                                        <constraint firstAttribute="bottom" secondItem="Cbd-ij-V7O" secondAttribute="bottom" constant="10" id="vCa-8Y-g3c"/>
+                                        <constraint firstAttribute="bottom" secondItem="Cbd-ij-V7O" secondAttribute="bottom" constant="5" id="vCa-8Y-g3c"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <viewLayoutGuide key="safeArea" id="MM4-0E-9Os"/>
+                                <connections>
+                                    <outlet property="todoTitleTextField" destination="Cbd-ij-V7O" id="fU7-kj-mwb"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TodoCell" id="aMU-I4-GcT">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
@@ -91,6 +97,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="rg1-Qq-8de"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -98,7 +105,7 @@
                             <outlet property="delegate" destination="iaO-ua-4Ko" id="gbG-bH-tBv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Новая Задачи" id="GmE-q0-Oa2">
+                    <navigationItem key="navigationItem" title="Новая Задача" id="GmE-q0-Oa2">
                         <barButtonItem key="leftBarButtonItem" image="backIcon" id="iId-lH-IJo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -112,10 +119,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addTodoTableView" destination="5L7-og-KWS" id="Dc2-XT-Br7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceL-dz-I5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2681" y="-505"/>
+            <point key="canvasLocation" x="2680.8000000000002" y="-505.09745127436287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hvk-8e-yZ5">
@@ -127,7 +137,7 @@
                         <color key="barTintColor" red="0.041506972230000001" green="0.62671527549999995" blue="0.8809504534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="iaO-ua-4Ko" kind="relationship" relationship="rootViewController" id="mOD-nX-OWm"/>
+                        <segue destination="iaO-ua-4Ko" kind="relationship" relationship="rootViewController" id="pKd-b5-Jnh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njV-bG-gSL" userLabel="First Responder" sceneMemberID="firstResponder"/>

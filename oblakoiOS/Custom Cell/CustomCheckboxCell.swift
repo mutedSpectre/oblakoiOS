@@ -9,12 +9,14 @@
 import M13Checkbox
 import UIKit
 
-class CustomCheckboxCell: UITableViewCell {
+class CustomCheckboxCell: UITableViewCell
+{
     
     @IBOutlet weak var todoCheckbox: M13Checkbox!
     @IBOutlet weak var todoTitle: UILabel?
     
-    override func awakeFromNib() {
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
         todoCheckbox.boxType = .square
         todoCheckbox.stateChangeAnimation = .fill

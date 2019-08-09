@@ -22,6 +22,7 @@
 		BE2DDCF521FCA47700D8F59E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCF121FCA47600D8F59E /* OpenSans-Regular.ttf */; };
 		BE2DDCF621FCA47700D8F59E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCF221FCA47600D8F59E /* OpenSans-Light.ttf */; };
 		BE2DDCF721FCA47700D8F59E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE2DDCF321FCA47600D8F59E /* OpenSans-Semibold.ttf */; };
+		CE34CCBE22FD0DAE0050BD9D /* AddTodoControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34CCBD22FD0DAE0050BD9D /* AddTodoControllerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BE2DDCF121FCA47600D8F59E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		BE2DDCF221FCA47600D8F59E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		BE2DDCF321FCA47600D8F59E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		CE34CCBD22FD0DAE0050BD9D /* AddTodoControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoControllerCell.swift; sourceTree = "<group>"; };
 		EF733714ED65A5DA92BF0CFE /* Pods-oblakoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oblakoiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oblakoiOS/Pods-oblakoiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BE2DDCEC21FCA3FA00D8F59E /* fonts */,
-				BE2DDCE121FC9B9000D8F59E /* Cells */,
+				BE2DDCE121FC9B9000D8F59E /* Custom Cell */,
 				BE2DDCC921FC8E9D00D8F59E /* AppDelegate.swift */,
 				BE2DDCCF21FC8E9E00D8F59E /* Main.storyboard */,
 				BE2DDCD221FC8EB100D8F59E /* Assets.xcassets */,
@@ -106,19 +108,20 @@
 				BE2DDCDD21FC9AC300D8F59E /* TodosController.swift */,
 				BE2DDCDF21FC9B5600D8F59E /* CustomTableview.swift */,
 				BE2DDCE621FC9FFF00D8F59E /* Project.swift */,
+				CE34CCBD22FD0DAE0050BD9D /* AddTodoControllerCell.swift */,
 				BE2DDCE821FCA01900D8F59E /* Todo.swift */,
 				BE2DDCEA21FCA06E00D8F59E /* AddTodoController.swift */,
 			);
 			path = oblakoiOS;
 			sourceTree = "<group>";
 		};
-		BE2DDCE121FC9B9000D8F59E /* Cells */ = {
+		BE2DDCE121FC9B9000D8F59E /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
 				BE2DDCE221FC9D0200D8F59E /* CustomCheckboxCell.xib */,
 				BE2DDCE421FC9D2D00D8F59E /* CustomCheckboxCell.swift */,
 			);
-			path = Cells;
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		BE2DDCEC21FCA3FA00D8F59E /* fonts */ = {
@@ -136,7 +139,7 @@
 /* Begin PBXNativeTarget section */
 		BE2DDCC521FC8E9D00D8F59E /* oblakoiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE2DDCDA21FC8EB100D8F59E /* Build configuration list for PBXNativeTarget "oblakoiOS" */;
+			buildConfigurationList = BE2DDCDA21FC8EB100D8F59E /* Build configuration list for PBXNativeTarget "TodoApp" */;
 			buildPhases = (
 				CBEC6B9F495B85C26E62F0F9 /* [CP] Check Pods Manifest.lock */,
 				BE2DDCC221FC8E9D00D8F59E /* Sources */,
@@ -165,6 +168,7 @@
 				TargetAttributes = {
 					BE2DDCC521FC8E9D00D8F59E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -181,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE2DDCC521FC8E9D00D8F59E /* oblakoiOS */,
+				BE2DDCC521FC8E9D00D8F59E /* TodoApp */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +257,7 @@
 				BE2DDCE521FC9D2D00D8F59E /* CustomCheckboxCell.swift in Sources */,
 				BE2DDCEB21FCA06E00D8F59E /* AddTodoController.swift in Sources */,
 				BE2DDCDE21FC9AC300D8F59E /* TodosController.swift in Sources */,
+				CE34CCBE22FD0DAE0050BD9D /* AddTodoControllerCell.swift in Sources */,
 				BE2DDCE921FCA01900D8F59E /* Todo.swift in Sources */,
 				BE2DDCE021FC9B5600D8F59E /* CustomTableview.swift in Sources */,
 				BE2DDCCA21FC8E9E00D8F59E /* AppDelegate.swift in Sources */,
@@ -411,7 +416,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = s.oblakoiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -429,7 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = s.oblakoiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
